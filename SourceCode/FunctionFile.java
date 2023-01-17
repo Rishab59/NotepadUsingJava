@@ -1,5 +1,6 @@
 /*
  * Developer's Name : Rishab.H
+ * This Notepad is developed using Eclipse IDE
  * "FunctionFile" class contains :
   		- Constructor.
   		- newFile() method => functionality of "New" MenuItem.

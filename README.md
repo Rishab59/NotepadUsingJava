@@ -3,8 +3,13 @@
 **i] This is a fully functional Notepad and also has Shortcuts like a regular notepad to use without mouse.**
 <br>
 
+**ii] This Notepad is developed using Eclipse IDE.**
+<br> 
 
-**ii] ShortCuts :**
+**iii] The ScrollPane will appear only if it is needed.**
+<br>
+
+**iv] ShortCuts :**
 
 * Alt + F => File Menu Click
 * Ctrl + N => Open a new file
@@ -20,11 +25,11 @@
 <br>
 
 
-**iii] By Default Ctrl + X, Ctrl + C, Ctrl + V will work for Cut, Copy, Paste text , so no need to explicitly define them.**
+**v] By Default Ctrl + X, Ctrl + C, Ctrl + V will work for Cut, Copy, Paste text, so no need to explicitly define them.**
 <br>
 
 
-**iv] By default :**
+**vi] By default :**
 
 * The window size is 800 x 600 px.
 * The font will be "Consolas".
@@ -34,7 +39,7 @@
 <br>
 
 
-**v] Purpose of each class :**
+**vii] Purpose of each class :**
 
 * "GUI" class => This is the main class (it contains main() method), it creates the GUI template and the structure and calls the corresponding methods in different classes as per different actions. 
 * "FunctionFile" class => This class contains methods the performs actions of "File" menu's items.
@@ -137,7 +142,14 @@
 
 <br>
 
-    keyTyped() and keyReleased() methods are empty because it is actually not needed but if we havn't defined them then an error is display and even the keyPressed() is not called.
+<u> **Note :** </u>
+<br>
+
+<p>
+    <strong>
+        &nbsp &nbsp &nbsp &nbsp keyTyped() and keyReleased() methods are empty because it is actually not needed but if we haven't defined them, then an error occurs and even the keyPressed() is not executed(keyPressed() method contains the actionListener for the shortcuts).
+    </strong>    
+</p>
 
 ---
 

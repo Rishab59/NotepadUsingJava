@@ -3,13 +3,16 @@
 **i] This is a fully functional Notepad and also has Shortcuts like a regular notepad to use without mouse.**
 <br>
 
-**ii] This Notepad is developed using Eclipse IDE.**
-<br> 
-
-**iii] The ScrollPane will appear only if it is needed.**
+**ii] After downloading fully just double click on "<u>NotepadByRishab.bat</u>" to launch**
 <br>
 
-**iv] ShortCuts :**
+**iii] This Notepad is developed using Eclipse IDE.**
+<br> 
+
+**iv] The ScrollPane will appear only if it is needed.**
+<br>
+
+**v] ShortCuts :**
 
 * Alt + F => File Menu Click
 * Ctrl + N => Open a new file
@@ -25,11 +28,11 @@
 <br>
 
 
-**v] By Default Ctrl + X, Ctrl + C, Ctrl + V will work for Cut, Copy, Paste text, so no need to explicitly define them.**
+**vi] By Default Ctrl + X, Ctrl + C, Ctrl + V will work for Cut, Copy, Paste text, so no need to explicitly define them.**
 <br>
 
 
-**vi] By default :**
+**vii] By default :**
 
 * The window size is 800 x 600 px.
 * The font will be "Consolas".
@@ -39,7 +42,7 @@
 <br>
 
 
-**vii] Purpose of each class :**
+**viii] Purpose of each class :**
 
 * "GUI" class => This is the main class (it contains main() method), it creates the GUI template and the structure and calls the corresponding methods in different classes as per different actions. 
 * "FunctionFile" class => This class contains methods the performs actions of "File" menu's items.

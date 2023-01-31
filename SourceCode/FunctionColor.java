@@ -26,7 +26,7 @@ public class FunctionColor
 	
 	public void changeColor(String currentBgColor)
 	{
-		switch(currentBgColor)
+		switch (currentBgColor)
 		{
 			case "White" :
 				gui.window.getContentPane().setBackground(Color.white) ;

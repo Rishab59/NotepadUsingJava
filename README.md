@@ -50,6 +50,10 @@
 * "FunctionColor" class => This class contains methods to change the background color and font color.
 * "FunctionEdit" class => This class contains methods the performs actions of "Edit" menu's items.
 * "KeyHandler" class => This is a class that contains Keyboard Event Handler to listen to keyboard shortcuts and call appropriate methods to perform the required action.
+<br>
+
+
+**xi] '*' will be added in the title of the notepad along with the existing title whenever an edit is made, this * is automatically removed when the notepad is saved.**
 
 <br>
 

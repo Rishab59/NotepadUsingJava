@@ -6,7 +6,7 @@
   		- keyTyped() method.
   		- keyPressed() method.
   		- keyReleased() method.
- * keyTyped() and keyReleased() methods are empty because it is actually not needed but if we haven't defined them, then an error occurs and even the keyPressed() is not executed(keyPressed() method contains the actionListener for the shortcuts).
+ * keyTyped() and keyReleased() methods are empty because it is actually not needed but if we haven't defined them, then an error occurs and even the keyPressed() is not executed (keyPressed() method contains the actionListener for the shortcuts).
  */
 
 
@@ -29,67 +29,67 @@ public class KeyHandler implements KeyListener
 	public void keyPressed(KeyEvent e) 
 	{
 		// Alt + F => File Menu Click
-		if((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_F))
+		if ((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_F))
 		{
 			gui.menuFile.doClick() ;
 		}
 		
 		// Ctrl + N => Open a new file
-		if((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_N))
+		if ((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_N))
 		{
 			gui.file.newFile() ;
 		}
 		
 		// Ctrl + O => Open a new file 
-		if((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_O))
+		if ((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_O))
 		{
 			gui.file.open() ;
 		}
 		
 		// Ctrl + S => Save a file
-		if((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_S))
+		if ((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_S))
 		{
 			gui.file.save() ;
 		}
 		
 		// Ctrl + Shift + S => SaveAs a file
-		if((e.isShiftDown()) && (e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_S))
+		if ((e.isShiftDown()) && (e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_S))
 		{
 			gui.file.saveAs() ;
 		}
 		
 		// Alt + F4 => Close the Notepad
-		if((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_F4))
+		if ((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_F4))
 		{
 			gui.file.exit() ;
 		}
 		
 		// Alt + E => Edit Menu Click
-		if((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_E))
+		if ((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_E))
 		{
 			gui.menuEdit.doClick() ;
 		}
 		
 		// Ctrl + Z => Undo Option
-		if((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_Z))
+		if ((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_Z))
 		{
 			gui.edit.undo() ;
 		}
 		
 		// Ctrl + R => Redo Option
-		if((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_R))
+		if ((e.isControlDown()) && (e.getKeyCode() == KeyEvent.VK_R))
 		{
 			gui.edit.redo() ;
 		}
 		
 		// Alt + O => Format Menu Click
-		if((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_O))
+		if ((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_O))
 		{
 			gui.menuFormat.doClick() ;
 		}
 		
 		// Alt + C => Color Menu Click
-		if((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_C))
+		if ((e.isAltDown()) && (e.getKeyCode() == KeyEvent.VK_C))
 		{
 			gui.menuColor.doClick() ;
 		}

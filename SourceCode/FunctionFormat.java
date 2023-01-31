@@ -27,7 +27,7 @@ public class FunctionFormat
 	
 	public void wordWrap()
 	{
-		if((gui.wordWrapOn) == false)
+		if ((gui.wordWrapOn) == false)
 		{
 			gui.wordWrapOn = true ;
 			gui.textArea.setLineWrap(true) ;
@@ -58,7 +58,7 @@ public class FunctionFormat
 	{
 		selectedFont = font ;
 		
-		switch(selectedFont)
+		switch (selectedFont)
 		{
 			case "Arial" :
 				gui.textArea.setFont(arial) ;

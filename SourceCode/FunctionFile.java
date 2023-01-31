@@ -43,7 +43,7 @@ public class FunctionFile
 		FileDialog fd = new FileDialog(gui.window, "Open option from Rishab's Notepad", FileDialog.LOAD) ;
 		fd.setVisible(true) ;
 		
-		if((fd.getFile()) != null)
+		if ((fd.getFile()) != null)
 		{
 			fileName = fd.getFile() ;
 			fileLocation = fd.getDirectory() ;
@@ -59,7 +59,7 @@ public class FunctionFile
 			gui.textArea.setText("") ;
 			String line = null ;
 			
-			while((line = br.readLine()) != null)
+			while ((line = br.readLine()) != null)
 			{
 				gui.textArea.append(line + "\n") ;
 			}
@@ -67,7 +67,7 @@ public class FunctionFile
 			br.close() ;
 		}
 		
-		catch(IOException e)
+		catch (IOException e)
 		{
 			System.out.println("Error in Opening the file") ;
 		}
@@ -75,7 +75,7 @@ public class FunctionFile
 	
 	public void save()
 	{
-		if(fileName == null)
+		if (fileName == null)
 		{
 			saveAs() ;
 		}
@@ -90,11 +90,13 @@ public class FunctionFile
 				fw.close() ;
 			}
 			
-			catch(Exception e)
+			catch (Exception e)
 			{
 				System.out.println(e.getMessage()) ;
 			}
 		}
+		
+		gui.titleChecking = 0 ;
 	}
 	
 	public void saveAs()
@@ -102,7 +104,7 @@ public class FunctionFile
 		FileDialog fd = new FileDialog(gui.window, "SaveAs option from Rishab's Notepad", FileDialog.SAVE) ;
 		fd.setVisible(true) ;
 		
-		if((fd.getFile()) != null)
+		if ((fd.getFile()) != null)
 		{
 			fileName = fd.getFile() ;
 			fileLocation = fd.getDirectory() ;
@@ -118,10 +120,12 @@ public class FunctionFile
 			fw.close() ;
 		}
 		
-		catch(Exception e)
+		catch (Exception e)
 		{
 			System.out.println(e.getMessage()) ;
 		}
+		
+		gui.titleChecking = 0 ;
 	}
 	
 	public void exit()

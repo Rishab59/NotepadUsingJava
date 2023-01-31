@@ -2,7 +2,7 @@
  * Developer's Name : Rishab.H
  * This Notepad is developed using Eclipse IDE
  * Description :
-  		- This is a fully functional Notepad and also has Shortcuts like a regular notepad to use without mouse.
+  		- This is a fully functional Notepad and also has Shortcuts like a regular Notepad to use without mouse.
   		- The ScrollPane will appear only if it is needed.
  * ShortCuts :
   		- Alt + F => File Menu Click
@@ -93,6 +93,8 @@ public class GUI implements ActionListener
 	
 	// Additional Features (Shortcuts)
 	KeyHandler kHandler = new KeyHandler(this) ;
+	
+	int titleChecking = 0 ;
 		
 	
 	public GUI()
@@ -143,6 +145,12 @@ public class GUI implements ActionListener
 						public void undoableEditHappened(UndoableEditEvent e)
 						{
 							um.addEdit(e.getEdit()) ;
+							
+							if (titleChecking == 0)
+							{
+								window.setTitle('*' + window.getTitle()) ;
+								titleChecking++ ;
+							}
 						}
 					}
 				) ;
